@@ -43,8 +43,23 @@
 <img src=""></img>
 
 ### Soal 13
+- Pada konfigurasi /etc/apache2/sites-available/penanjakan.semerud12.pw ditambahkan alias sebagai berikut.
+<img src=""></img>
+- Agar konfigurasinya dijalankan maka dilakukan restart Apache2.
+<img src=""></img>
+
 ### Soal 14
+- Pertama, melakukan download file untuk penanjakan dengan perintah wget 10.151.36.202/naik.gunung.semeru.pw.zip dan hasil unzipnya dipindakhan menuju /var/www/naik.gunung.semerud12.pw.
+- Untuk konfigurasinya dibuatkan file penanjakan.semerud12 pada direktori /etc/apache2/sites-available/naik.gunung.semerud12.pw yang awalnya merupakan file copy dari file default.
+- Agar hanya bisa diakses menggunakan port 8888 maka pada Virtual Host di set untuk port 8888.
+- Untuk Konfigurasinya sebagai berikut.
+<img src=""></img>
+- Untuk mengaktifkan sitenya maka dilakukan perintah a2ensite semerud12.pw dan dilakukan restart pada Apache2.
+<img src=""></img>
+
 ### Soal 15
+- Pada Apache2
+
 ### Soal 16
 ### Soal 17
 
