@@ -18,7 +18,7 @@
 - Melakukan restart bind9 dengan  ```service bind9 restart```
 
 ### Soal 3
-- Pada UML Malang, dilakukan konfigurasi pada file /etc/bind/jarkom/semerud12.pw ditambahkan record untuk subdomain sebagai berikut.
+- Pada UML Malang, dilakukan konfigurasi pada file /etc/bind/jarkom/semerud12.pw ditambahkan record untuk subdomain sebagai berikut.   
 <img src="Images/Malang-Smeru.JPG"></img>
 - Melakukan restart bind9 dengan  ```service bind9 restart```
 
@@ -40,7 +40,7 @@
 - Untuk testing dilakukan ```service bind9 stop``` pada UML Malang.
 
 ### Soal 6
-- Pada UML Malang dilakukan konfigurasi pada /etc/bind/jarkom/semerud12.pw untuk melakukan delegasi name server pada IP Mojokerto.
+- Pada UML Malang dilakukan konfigurasi pada /etc/bind/jarkom/semerud12.pw untuk melakukan delegasi name server pada IP Mojokerto.   
 <img src="Images/Malang-Smeru.JPG"></img>
 - Pada file /etc/bind/named.conf.options di UML Malang dilakukan comment untuk **dnssec-validation auto;** dan ditambahkan **allow-query{any;};**
 - Pada file /etc/bind/named.conf.local di UML Malang dibuat konfigurasi seperti ini
@@ -61,33 +61,38 @@
 - Kemudian dilakukam download file dengan perintah wget 10.151.36.202/semeru.pw.zip dan hasil unzip semeru.pw dan di pindahkan menuju /var/www/semerud12.pw. 
 - Untuk konfigurasinya maka dibuatkan file semerud12.pw pada direktori /etc/apache2/sites-available/semerud12.pw yang awalnya merupakan file copy dari file default.
 - Isi konfigurasinya sebagai berikut.
-<img src="Images/Probo-Semeru.JPG"></img>
+<img src="Images/Probo-Semeru1.JPG"></img>
 - Untuk mengaktifkan sitenya maka dilakukan perintah a2ensite semerud12.pw dan dilakukan restart pada Apache2.
 <img src="Images/SemeruMain.JPG"></img>
 
 ### Soal 9
-
+- Untuk melakukan mod rewrite maka mod rewrite perlu diaktifkan dengan menggunakan command **a2enmod rewrite**
+- File konfigurasi mod rewrite diletakkan di /var/www/semerud12.pw/.htaccess berisi konfigurasi sebagai berikut.
+<img src="Images/Probo-Semeru-htaccess.JPG"></img>
 
 ### Soal 10
 - Pertama, melakukan download file untuk penanjakan dengan perintah wget 10.151.36.202/penanjakan.semeru.pw.zip dan hasil unzipnya dipindakhan menuju /var/www/penanjakan.semerud12.pw.
 - Untuk konfigurasinya dibuatkan file penanjakan.semerud12 pada direktori /etc/apache2/sites-available/penanjakan.semerud12.pw yang awalnya merupakan file copy dari file default.
 - Untuk Konfigurasinya sebagai berikut.
-<img src=""></img>
+<img src="Images/Probo-Penanjakan1.JPG"></img>
 - Untuk mengaktifkan sitenya maka dilakukan perintah a2ensite semerud12.pw dan dilakukan restart pada Apache2.
-<img src=""></img>
 
 ### Soal 11
 - Karena pada folder /public dibolehkan directory listing  dan di dalamnya tidak maka dibuatkan konfigurasi sebagai berikut.
-<img src=""></img>
+<img src="Images/Probo-Penanjakan2.JPG"></img>
+<img src="Images/Probo-Penanjakan3.JPG"></img>
 - Agar konfigurasinya dijalankan maka dilakukan restart Apache2.
-<img src=""></img>
+- Ketika mencoba mengakses public maka seperti berikut.
+<img src="Images/PenanjakanPublic.JPG"></img>
+- Ketika mencoba mengakses images maka keluar sebagai berikut.
+<img src="Images/PenanjakanImages.JPG"></img>
 
 ### Soal 12
 - Pada folder /errors disediakan page 404. Untuk mengubah page 404 default pada penanjakan.semerud12.pw, maka ditambahkan sebuah konfigurasi pada /etc/apache2/sites-available/penanjakan.semerud12.pw.
-- Konfigurasinya sebagai berikut.
-<img src=""></img>
+- Konfigurasinya ditambahkan ErrorDocumet 404 sebagai berikut.
+<img src="Images/Probo-Penanjakan4.JPG"></img>
 - Agar konfigurasinya dijalankan maka dilakukan restart Apache2.
-<img src=""></img>
+<img src="Images/PenanjakanNotFound.JPG"></img>
 
 ### Soal 13
 - Pada konfigurasi /etc/apache2/sites-available/penanjakan.semerud12.pw ditambahkan alias sebagai berikut.
