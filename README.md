@@ -130,7 +130,10 @@ Untuk testing dilakukan ```service bind9 stop``` pada UML Malang.
 <img src=""></img>
 
 ### Soal 17
-
-
+- Pada Soal ini dilakukan konfigurasi pada /etc/apache2/sites-available/penanjakan.semerud12.pw sebagai berikut.
+<img src="/Images/No17.png"></img>
+- Agar konfigurasinya dijalankan maka dilakukan restart Apache2.
+- Bila dicoba menggunakan penanjakan.semerud12.pw/public/images/mahasemeru maka akan menampilkan gambar semeru.jpg seperti berikut.
+<img src="/Images/PenanjakanMahasemeru.JPG"></img>
 
 
