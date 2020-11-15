@@ -14,61 +14,56 @@
 
 ### Soal 2
 - Pada UML Malang, dilakukan konfigurasi pada file /etc/bind/jarkom/semerud12.pw ditambahkan record CNAME sebagai berikut.
-<img src=""></img>
+<img src="Images/Malang-Smeru.JPG"></img>
 - Melakukan restart bind9 dengan  ```service bind9 restart```
-<img src=""></img>
 
 ### Soal 3
 - Pada UML Malang, dilakukan konfigurasi pada file /etc/bind/jarkom/semerud12.pw ditambahkan record untuk subdomain sebagai berikut.
-<img src=""></img>
+<img src="Images/Malang-Smeru.JPG"></img>
 - Melakukan restart bind9 dengan  ```service bind9 restart```
-<img src=""></img>
 
 ### Soal 4
 - Pada UML Malang dilakukan konfigurasi zone untuk Reverse DNS pada /etc/bind/named.conf.local sebagai berikut.
-<img src=""></img>
+<img src="Images/Malang-Local2.JPG"></img>
 - Melakukan copy pada file /etc/bind/db.local ke /etc/bind/jarkom/79.151.10.in-addr.arpa
 - Pada /etc/bind/jarkom/79.151.10.in-addr.arpa dilakukan konfigurasi untuk Reverse DNS nya menuju semerud12.pw.
-<img src=""></img>
+<img src="Images/Malang-Rev.JPG"></img>
 - Melakukan restart bind9 dengan ```service bind9 restart``` dan pada client ditambahkan nameserver IP Malang.
-<img src=""></img>
 
 ### Soal 5
 - Pada UML Malang dilakukan konfigurasi zone  pada /etc/bind/named.conf.local untuk dijadikan master sebagai berikut.
-<img src=""></img>
+<img src="Images/Malang-Local.JPG"></img>
 - Dilakukan restart bind9 dengan ```service bind9 restart``` pada UML Malang.
 - Pada UML Mojokerto dilakukan konfigurasi pada /etc/bind/named.conf.local untuk dijadikan slave sebagai berikut.
-<img src=""></img>
+<img src="Images/Mojo-Local.JPG"></img>
 - Dilakukan restart bind9 dengan ```service bind9 restart``` pada UML Mojokerto.
-
-Untuk testing dilakukan ```service bind9 stop``` pada UML Malang.
-<img src=""></img>
+- Untuk testing dilakukan ```service bind9 stop``` pada UML Malang.
 
 ### Soal 6
 - Pada UML Malang dilakukan konfigurasi pada /etc/bind/jarkom/semerud12.pw untuk melakukan delegasi name server pada IP Mojokerto.
-<img src=""></img>
+<img src="Images/Malang-Smeru.JPG"></img>
 - Pada file /etc/bind/named.conf.options di UML Malang dilakukan comment untuk **dnssec-validation auto;** dan ditambahkan **allow-query{any;};**
 - Pada file /etc/bind/named.conf.local di UML Malang dibuat konfigurasi seperti ini
-<img src=""></img>
+<img src="Images/Malang-Local.JPG"></img>
 - Pada file /etc/bind/named.conf.options di UML Mojokerto dilakukan comment untuk **dnssec-validation auto;** dan ditambahkan **allow-query{any;};**
 - Pada file /etc/bind/named.conf.local di UML Mojokerto dibuat konfigurasi seperti ini
-<img src=""></img>
+<img src="Images/Mojo-Local.JPG"></img>
 - Kemudian, melakukan konfigurasi untuk file /etc/bind/delegasi/gunung.semerud12.pw sebagai berikut.
-<img src=""></img>
+<img src="Images/Mojo-Delegasi.JPG"></img>
 - Dilakukan ```service bind9 restart``` pada UML Malang dan Mojokerto.
 
 ### Soal 7
 - Pada file nano /etc/bind/delegasi/gunung.semerud12.pw ditambahkan record untuk subdomain naik sebagai berikut.
-<img src=""></img>
+<img src="Images/Mojo-Delegasi.JPG"></img>
 
 ### Soal 8
 - Pertama, melakukan instalasi apache2 dan php5 pada server Probolinggo.
 - Kemudian dilakukam download file dengan perintah wget 10.151.36.202/semeru.pw.zip dan hasil unzip semeru.pw dan di pindahkan menuju /var/www/semerud12.pw. 
 - Untuk konfigurasinya maka dibuatkan file semerud12.pw pada direktori /etc/apache2/sites-available/semerud12.pw yang awalnya merupakan file copy dari file default.
 - Isi konfigurasinya sebagai berikut.
-<img src=""></img>
+<img src="Images/Probo-Semeru.JPG"></img>
 - Untuk mengaktifkan sitenya maka dilakukan perintah a2ensite semerud12.pw dan dilakukan restart pada Apache2.
-<img src=""></img>
+<img src="Images/SemeruMain.JPG"></img>
 
 ### Soal 9
 
