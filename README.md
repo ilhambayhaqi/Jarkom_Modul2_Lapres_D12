@@ -49,12 +49,18 @@ Untuk testing dilakukan ```service bind9 stop``` pada UML Malang.
 - Pada UML Malang dilakukan konfigurasi pada /etc/bind/jarkom/semerud12.pw untuk melakukan delegasi name server pada IP Mojokerto.
 <img src=""></img>
 - Pada file /etc/bind/named.conf.options di UML Malang dilakukan comment untuk **dnssec-validation auto;** dan ditambahkan **allow-query{any;};**
-- Pada file /etc/bind/named.conf.local dibuat konfigurasi seperti ini
+- Pada file /etc/bind/named.conf.local di UML Malang dibuat konfigurasi seperti ini
 <img src=""></img>
 - Pada file /etc/bind/named.conf.options di UML Mojokerto dilakukan comment untuk **dnssec-validation auto;** dan ditambahkan **allow-query{any;};**
+- Pada file /etc/bind/named.conf.local di UML Mojokerto dibuat konfigurasi seperti ini
+<img src=""></img>
+- Kemudian, melakukan konfigurasi untuk file /etc/bind/delegasi/gunung.semerud12.pw sebagai berikut.
+<img src=""></img>
+- Dilakukan ```service bind9 restart``` pada UML Malang dan Mojokerto.
 
 ### Soal 7
-
+- Pada file nano /etc/bind/delegasi/gunung.semerud12.pw ditambahkan record untuk subdomain naik sebagai berikut.
+<img src=""></img>
 
 ### Soal 8
 - Pertama, melakukan instalasi apache2 dan php5 pada server Probolinggo.
@@ -66,6 +72,8 @@ Untuk testing dilakukan ```service bind9 stop``` pada UML Malang.
 <img src=""></img>
 
 ### Soal 9
+
+
 ### Soal 10
 - Pertama, melakukan download file untuk penanjakan dengan perintah wget 10.151.36.202/penanjakan.semeru.pw.zip dan hasil unzipnya dipindakhan menuju /var/www/penanjakan.semerud12.pw.
 - Untuk konfigurasinya dibuatkan file penanjakan.semerud12 pada direktori /etc/apache2/sites-available/penanjakan.semerud12.pw yang awalnya merupakan file copy dari file default.
