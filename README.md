@@ -35,8 +35,27 @@
 <img src=""></img>
 
 ### Soal 5
+- Pada UML Malang dilakukan konfigurasi zone  pada /etc/bind/named.conf.local untuk dijadikan master sebagai berikut.
+<img src=""></img>
+- Dilakukan restart bind9 dengan ```service bind9 restart``` pada UML Malang.
+- Pada UML Mojokerto dilakukan konfigurasi pada /etc/bind/named.conf.local untuk dijadikan slave sebagai berikut.
+<img src=""></img>
+- Dilakukan restart bind9 dengan ```service bind9 restart``` pada UML Mojokerto.
+
+Untuk testing dilakukan ```service bind9 stop``` pada UML Malang.
+<img src=""></img>
+
 ### Soal 6
+- Pada UML Malang dilakukan konfigurasi pada /etc/bind/jarkom/semerud12.pw untuk melakukan delegasi name server pada IP Mojokerto.
+<img src=""></img>
+- Pada file /etc/bind/named.conf.options di UML Malang dilakukan comment untuk **dnssec-validation auto;** dan ditambahkan **allow-query{any;};**
+- Pada file /etc/bind/named.conf.local dibuat konfigurasi seperti ini
+<img src=""></img>
+- Pada file /etc/bind/named.conf.options di UML Mojokerto dilakukan comment untuk **dnssec-validation auto;** dan ditambahkan **allow-query{any;};**
+
 ### Soal 7
+
+
 ### Soal 8
 - Pertama, melakukan instalasi apache2 dan php5 pada server Probolinggo.
 - Kemudian dilakukam download file dengan perintah wget 10.151.36.202/semeru.pw.zip dan hasil unzip semeru.pw dan di pindahkan menuju /var/www/semerud12.pw. 
