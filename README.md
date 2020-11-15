@@ -5,9 +5,35 @@
 # Solusi
 
 ### Soal 1
+- Pada UML Malang dilakukan konfigurasi zone pada /etc/bind/named.conf.local sebagai berikut.
+<img src""></img>
+- Melakukan copy pada file /etc/bind/db.local ke /etc/bind/jarkom/semerud12.pw
+- Pada /etc/bind/jarkom/semerud12.pw dilakukan konfigurasi dengan record A mengarah ke IP Malang sebagai berikut.
+<img src""></img>
+- Melakukan restart bind9 dengan ```service bind9 restart``` dan pada client ditambahkan nameserver IP Malang.
+<img src""></img>
+
 ### Soal 2
+- Pada UML Malang, dilakukan konfigurasi pada file /etc/bind/jarkom/semerud12.pw ditambahkan record CNAME sebagai berikut.
+<img src""></img>
+- Melakukan restart bind9 dengan  ```service bind9 restart```
+<img src""></img>
+
 ### Soal 3
+- Pada UML Malang, dilakukan konfigurasi pada file /etc/bind/jarkom/semerud12.pw ditambahkan record untuk subdomain sebagai berikut.
+<img src""></img>
+- Melakukan restart bind9 dengan  ```service bind9 restart```
+<img src""></img>
+
 ### Soal 4
+- Pada UML Malang dilakukan konfigurasi zone untuk Reverse DNS pada /etc/bind/named.conf.local sebagai berikut.
+<img src""></img>
+- Melakukan copy pada file /etc/bind/db.local ke /etc/bind/jarkom/79.151.10.in-addr.arpa
+- Pada /etc/bind/jarkom/79.151.10.in-addr.arpa dilakukan konfigurasi untuk Reverse DNS nya menuju semerud12.pw.
+<img src""></img>
+- Melakukan restart bind9 dengan ```service bind9 restart``` dan pada client ditambahkan nameserver IP Malang.
+<img src""></img>
+
 ### Soal 5
 ### Soal 6
 ### Soal 7
