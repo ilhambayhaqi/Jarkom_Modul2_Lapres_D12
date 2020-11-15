@@ -2,7 +2,7 @@
 - Muhammad Ilham Bayhaqi - 05111840000069
 - Clever Dicki Marpaung - 05111840000116
 
-# Soal
+# Solusi
 
 1. 
 2.
