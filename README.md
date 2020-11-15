@@ -71,7 +71,13 @@
 <img src=""></img>
 
 ### Soal 16
+- Agar bila IP Probolinggo ketika dikunjungi mengarah ke semeru, maka pada /etc/apache2/sites-available/default ditambahkan konfigurasi sebagai berikut.
+<img src=""></img>
+- Agar konfigurasinya dijalankan maka dilakukan restart Apache2.
+<img src=""></img>
+
 ### Soal 17
+
 
 
 
