@@ -58,7 +58,17 @@
 <img src=""></img>
 
 ### Soal 15
-- Pada Apache2
+- Pada Apache2-Utils terdapat fitur yang dapat digunakan untuk membuat user dengan htpasswd. Untuk membuat akun dengan nama "semeru", maka dilakukan dengan command sebagai berikut.
+```
+ htpasswd -c /etc/apache2/.htpasswd semeru
+```
+- Setelah dilakukan command tersebut, nanti akan ada perintah untuk meninputkan password. Password disi dengan "kuynaikgunung".
+- Bila user berhasil dibuat maka pada file /etc/apache2/.htpasswd akan terlihat sebagai berikut.
+<img src=""></img>
+- Agar Authentikasi diterapkan maka ditambahkan konfigurasi pada file /etc/apache2/sites-available/naik.gunung.semerud12.pw sebagai berikut.
+<img src=""></img>
+- Agar konfigurasinya dijalankan maka dilakukan restart Apache2.
+<img src=""></img>
 
 ### Soal 16
 ### Soal 17
