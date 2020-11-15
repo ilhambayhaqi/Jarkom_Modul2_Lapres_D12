@@ -6,12 +6,11 @@
 
 ### Soal 1
 - Pada UML Malang dilakukan konfigurasi zone pada /etc/bind/named.conf.local sebagai berikut.
-<img src=""></img>
+<img src="Images/Malang-Local.JPG"></img>
 - Melakukan copy pada file /etc/bind/db.local ke /etc/bind/jarkom/semerud12.pw
 - Pada /etc/bind/jarkom/semerud12.pw dilakukan konfigurasi dengan record A mengarah ke IP Malang sebagai berikut.
-<img src=""></img>
+<img src="Images/Malang-Smeru.JPG"></img>
 - Melakukan restart bind9 dengan ```service bind9 restart``` dan pada client ditambahkan nameserver IP Malang.
-<img src=""></img>
 
 ### Soal 2
 - Pada UML Malang, dilakukan konfigurasi pada file /etc/bind/jarkom/semerud12.pw ditambahkan record CNAME sebagai berikut.
